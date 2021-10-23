@@ -15,11 +15,16 @@ import {
   
 
 
-const Login = (login) => {
+const Login = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [userId, setUserId] = useState('');
+  const [password, setPassword] = useState('');
+
   const openModalHandler = () => {
     setIsOpen(!isOpen);
   };
+
+  
 
   return (
     <div>

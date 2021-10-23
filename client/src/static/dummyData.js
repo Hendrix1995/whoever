@@ -1204,5 +1204,159 @@ export const initialState = {
       createdAt: '2021-10-25T16:17:27.000Z',
       updatedAt: '2021-10-25T16:17:27.000Z'
     }
+  ],
+  mypost: [
+    {
+      id: 1,
+      userId: 1,
+      img: '../images/jyp.png',
+      categoryId: 1,
+      title: '여행을 떠나요~~!',
+      content:
+        '게시판!의 내용을 여기 적을건데 뭔가 나도 길게 적고는 싶지만 나는 그다지 창의력이 없는지 길게 적기는 너무 힘든 것이에요. 하지만 테스트를 위해 일단 적어 봅니다. 이거 깨지나요? 아닐걸요 내가 만든거거든요 훗. 재송합니다. 개소리는 여기까지 적도록 하겠읍니다.',
+      views: 1,
+      suggestions: 15,
+      createdAt: '2001-08-12T16:17:27.000Z',
+      updatedAt: '2001-08-12T16:17:27.000Z'
+    },
+    {
+      id: 4,
+      userId: 1,
+      img: '../images/jyp.png',
+      categoryId: 1,
+      title: '자동차 렌트 정보좀요',
+      content: '가나다라마바사,abcdefg',
+      views: 1,
+      suggestions: 7,
+      createdAt: '2004-02-12T16:17:27.000Z',
+      updatedAt: '2004-02-12T16:17:27.000Z'
+    },
+    {
+      id: 12,
+      userId: 1,
+      img: '',
+      categoryId: 2,
+      title: '쏘맥',
+      content: '가나다라마바사,abcdefg',
+      views: 1,
+      suggestions: 5,
+      createdAt: '2002-02-12T16:17:27.000Z',
+      updatedAt: '2002-02-12T16:17:27.000Z'
+    },
+    {
+      id: 16,
+      userId: 1,
+      img: '../images/jyp.png',
+      categoryId: 2,
+      title: '파뤼타임',
+      content: '가나다라마바사,abcdefg',
+      views: 1,
+      suggestions: 15,
+      createdAt: '2006-11-30T16:17:27.000Z',
+      updatedAt: '2006-11-30T16:17:27.000Z'
+    },
+    {
+      id: 30,
+      userId: 1,
+      img: '../images/jyp.png',
+      categoryId: 3,
+      title: '제주도 감귤막걸리 흑돼지 조합',
+      content: '가나다라마바사,abcdefg',
+      views: 1,
+      suggestions: 1,
+      createdAt: '2010-07-12T16:17:27.000Z',
+      updatedAt: '2010-07-12T16:17:27.000Z'
+    },
+    {
+      id: 35,
+      userId: 1,
+      img: '../images/jyp.png',
+      categoryId: 4,
+      title: '도시어부 촬영지 어딘가요?',
+      content: '가나다라마바사,abcdefg',
+      views: 1,
+      suggestions: 1,
+      createdAt: '2003-12-12T16:17:27.000Z',
+      updatedAt: '2003-12-12T16:17:27.000Z'
+    },
+    {
+      id: 65,
+      userId: 1,
+      img: '../images/jyp.png',
+      categoryId: 3,
+      title: '밀키트 쇼핑몰 추천이요~',
+      content: `롯데푸드가 밀키트 시장에 도전장을 내밀었다. 1인 가구가 늘면서 가정간편식(HMR) 시장이 성장하는 가운데 특히 손질된 식재료와 소스, 조리법 등을 제공받아 간편하게 요리할 수 있는 밀키트(Mealkit) 시장도 날이 갈수록 커지고 있기 때문이다.
+      8일 업계에 따르면 롯데푸드는 지난달 평택공장에 밀키트 생산라인을 도입해 이달 제품의 첫 생산을 시작한다. 첫 제품은 쉐푸드 버섯우엉잡채다. 롯데마트, 롯데슈퍼,  온라인 채널 등에 판매하는 것이 목표다. 
+      롯데푸드의 평택공장은 가정간편식 전용 공장으로 연면적 약 6500평 규모에 최신 면 생산 설비 및 김밥, 샌드위치, 햄버거, 샐러드 등의 간편식 생산 라인을 갖추고 있다. 이번 밀키트 생산라인 도입으로 가정간편식 시장에서 롯데푸드의 성장은 한층 가속화 될 것으로 점쳐진다. 
+      롯데푸드 관계자는 "앞으로 밀키트 제품을 확대해 나가는 것을 검토하고 있다"고 설명했다.`,
+      views: 1,
+      suggestions: 1,
+      createdAt: '2016-03-30T16:17:27.000Z',
+      updatedAt: '2016-03-30T16:17:27.000Z'
+    },
+    {
+      id: 73,
+      userId: 1,
+      img: '',
+      categoryId: 5,
+      title: '아이유 신곡 Strawberry Moon 짱 좋음!',
+      content: '가나다라마바사,abcdefg',
+      views: 1,
+      suggestions: 5,
+      createdAt: '2010-02-12T16:17:27.000Z',
+      updatedAt: '2010-02-12T16:17:27.000Z'
+    },
+    {
+      id: 85,
+      userId: 1,
+      img: '../images/jyp.png',
+      categoryId: 5,
+      title: '슬기로운 의사생활 ost 목록',
+      content: `3.1. Part.1 비와 당신
+      3.2. Part.2 가을 우체국 앞에서
+      3.3. Part.3 나는 너 좋아
+      3.4. Part.4 누구보다 널 사랑해
+      3.5. Part.5 좋아 좋아
+      3.6. Part.6 슈퍼스타
+      3.7. 첫번째 스페셜
+      3.8. Part.7 너에게
+      3.9. Part.8 여전히 아름다운지
+      3.10. Part.9 회상
+      3.11. Part.10 It's My Life
+      3.12. 두번째 스페셜
+      3.13. Part.11 하늘을 달리다
+      3.14. Part.12-1 Butterfly
+      3.15. Part.12-2 언젠가는`,
+      views: 1,
+      suggestions: 1,
+      createdAt: '2021-06-02T16:17:27.000Z',
+      updatedAt: '2021-06-02T16:17:27.000Z'
+    },
+    {
+      id: 96,
+      userId: 1,
+      img: '../images/jyp.png',
+      categoryId: 6,
+      title: '쿠팡 개발자 채용 공고',
+      content: '가나다라마바사,abcdefg',
+      views: 1,
+      suggestions: 15,
+      createdAt: '2020-08-12T16:17:27.000Z',
+      updatedAt: '2020-08-12T16:17:27.000Z'
+    },
+    {
+      id: 100,
+      userId: 1,
+      img: '../images/jyp.png',
+      categoryId: 6,
+      title: '우분투 하다가 속터집니다진짜!!',
+      content:
+        'LTS사용 안하는이상 6개월마다 업데이트 해줘야함, 유니티가 호불호가 갈림, LTS도 최신버전과 차별이 좀 있음(LTS는 지원기간이 5년)//16년도) 영어권은 잘되어있지만 한글은 오역이 있을 수 있음',
+      views: 1,
+      suggestions: 1,
+      createdAt: '2021-10-12T16:17:27.000Z',
+      updatedAt: '2021-10-12T16:17:27.000Z'
+    }
+
   ]
 };

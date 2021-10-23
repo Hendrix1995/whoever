@@ -36,7 +36,7 @@ const Sidebar = ({ isLogin, isOpen, sideBarOpenHandler }) => {
               </UserInfoUpContainer>
               <UserInfoDownBtnContainer>
                 <UserPost className="fas fa-user-edit">
-                  <UserPostText>작성글</UserPostText>
+                  {/* <UserPostText onClick={}>작성글</UserPostText> */}
                 </UserPost>
                 {/* 당신... 작성한 글 페이지 만들어야돼.. */}
                 {isLogin ? (
