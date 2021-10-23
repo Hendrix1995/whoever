@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-    Title,
     TitleDiv,
     LoginModalContainer,
     LoginModalBtn,
@@ -12,7 +11,6 @@ import {
     Id_text,
     Pw_text,
     Validation_Check,
-    Input_Span,
     ModalInsideContainer,
     CloseBtn
   } from "./Login.style";
@@ -39,12 +37,8 @@ const Login = () => {
   }
 
   const loginBtnHandler = () => {
-    axios
-      .post(
-        `${process.env.REACT_APP_API_URL}/login`,
-        { userId: userId, password: password },
-      )
-  }
+    // axios로 사용 요청을 보낼때  db에 있는 정보에 맞춰서 버튼 실행하는 이벤트 핸들러 
+    }; 
 
   return (
       <LoginModalContainer>
@@ -66,7 +60,7 @@ const Login = () => {
               <Pw_text>Password</Pw_text>
                 <Pw_Input className='password' onChange ={handleChange}/>
                 <Validation_Check> 일치하는 정보가 없습니다.</Validation_Check>
-              <LoginBtn>Login</LoginBtn>
+              <LoginBtn onClick ={loginBtnHandler}>Login</LoginBtn>
                 <SignUp />
                 </ModalInsideContainer>
             </LoginModalView>

@@ -9,8 +9,8 @@ export const LoginModalView = styled.div.attrs((props) => ({
   align-items: center;
   border-radius: 15px;
   background-color: white;
-  width: 350px;
-  height: 400px;
+  width: 335px;
+  height: 360px;
 
   > div.clost.btn {
     margin-top: 15px;
@@ -33,12 +33,6 @@ export const Title = styled.div`
   font-family: 'mikado';
 `;
 
-export const Input_Span = styled.div`
-  width: 84%;
-  height: 41px;
-  border: solid 1px #dadada;
-`
-
 export const TitleDiv = styled.div`
   border-bottom: solid 5px #ffad4f;
   font-family: 'Mikado';
@@ -52,14 +46,14 @@ export const TitleDiv = styled.div`
 export const Id_text = styled.div`
   font-size: 23px;
   color: #ffad4f;
-  padding: 15px 0 2px;
+  padding: 10px 0 2px;
   font-family: 'Mikado';
 `;
 
 export const Pw_text = styled.div`
   font-size: 25px;
   color: #ffad4f;
-  padding: 15px 0 2px;
+  padding: 10px 0 2px;
   font-family: 'Mikado';
 `;
 
@@ -105,15 +99,15 @@ export const LoginModalBtn = styled.button.attrs({type: 'button'})`
 }
 `;
 
-export const LoginBtn = styled.button`
+export const LoginBtn = styled.button.attrs({ type: "submit"})`
   background-color: #ffad4f;
   font-size: 20px;
   border: none;
   padding:12px;
-  width: 300px;
+  width: 288px;
   color: white;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 10px;
   font-family: 'Mikado';
 `;
 
@@ -141,9 +135,11 @@ export const Id_Input = styled.input.attrs({ type: 'text' })`
   height: 2.1em;
   outline: none;
   cursor: pointer;
+  border: solid 1px #dadada;
   
   &:focus {
     outline: 1px solid #ffad4f;
+    border:hidden;
   }
 `
 export const Pw_Input = styled.input.attrs({ type: 'password' })`
@@ -151,10 +147,12 @@ export const Pw_Input = styled.input.attrs({ type: 'password' })`
   height: 2.2em;
   outline: none;
   padding: 0px 25px 0px 0px;
+  border: solid 1px #dadada;
   cursor:pointer;
 
   &:focus {
     outline: 1px solid #ffad4f;
+    border:hidden;
   }
 `
 export const CloseBtn = styled.span`
