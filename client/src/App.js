@@ -6,7 +6,6 @@ import Main from './pages/main';
 import NewPost from './pages/newPost';
 import OnePost from './pages/onePost';
 import PostList from './pages/postList';
-import Login from './components/Login';
 import Footer from './components/Footer';
 // import { initialState } from './static/dummyData';
 
@@ -18,22 +17,10 @@ function App() {
       <div className="App">
         <Header isLogin={isLogin} />
         <Switch>
-          <Route exact path="/">
-            <Main />
-            {/* <Main posts={posts} categories={categories} /> */}
-          </Route>
-          <Route path="/newPost">
-            <NewPost />
-          </Route>
-          <Route path="/onePost/:no" component={OnePost}>
-            <OnePost />
-          </Route>
-          <Route path="/postList/:no" component={PostList}>
-            <PostList />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
+          <Route exact path="/" component={Main} />
+          <Route path="/postList/:no/newPost" component={NewPost} />
+          <Route path="/onePost/:no" component={OnePost} />
+          <Route path="/postList/:no" component={PostList} />
         </Switch>
         <Footer />
       </div>
@@ -42,4 +29,3 @@ function App() {
 }
 
 export default App;
-
