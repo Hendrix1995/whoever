@@ -17,10 +17,12 @@ import {
 
   const Mypost = ({ match, myposts }) => {
     const categoryId = Number(match.params.no);
+    console.log(categoryId)
     // categoryId에 맞는 post만 서버에서 받는다. useEffect,axios
-    console.log(myposts)
-    const categoryPost = myposts.reverse();
-    console.log(categoryPost)
+   
+    const categoryPost = myposts
+    .slice()
+    .reverse();
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(10);
     const categoryLength = categoryPost.length;
@@ -45,7 +47,7 @@ import {
 
     return(
         <MypageContainer>
-                <div>내가 작성한 글</div>
+            <PostTitle categoryTitle='나의' />
         {/* // categorLength={categorLength} */}
             <ListmenuBox>
             <ListTitle>제목</ListTitle>
@@ -58,13 +60,10 @@ import {
                 <Lists
                 key={post.id}
                 post={post}
-                categoryTitle={getCategoryTitle(categoryId)}
                 />  
             ))}
             </ListdivBox>
-            <WritiBox>
-                <Stylelink to={`/postList/${categoryId}/newPost`}></Stylelink>
-            </WritiBox>
+           
             <PagenumBox>
             <Pagination
              postsPerPage={postsPerPage}
