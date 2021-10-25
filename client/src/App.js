@@ -6,14 +6,15 @@ import Main from './pages/main';
 import NewPost from './pages/newPost';
 import OnePost from './pages/onePost';
 import PostList from './pages/postList';
-import Login from './components/Login';
+import Mypost from './pages/mypost';
 import Footer from './components/Footer';
 import { initialState } from './static/dummyData';
 
 function App() {
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
   // const [userInfo, setUserInfo] = useState({});
   const [posts, setPosts] = useState(initialState.posts);
+  const [myposts, setMyposts] = useState(initialState.mypost);
   const [categories, setCategories] = useState(initialState.categories);
 
   // const handleChange = () => {
@@ -52,8 +53,13 @@ function App() {
           />
           <Route
             path="/onePost=:no"
-            render={(match) => <OnePost posts={posts} match={match.match} />}
+            render={(match) => <OnePost posts={posts} setPosts={setPosts} match={match.match} />}
           />
+          <Route path="/mypost" 
+          render={(match) => (
+              <Mypost
+                posts={posts} match={match.match} />)}
+                />
         </Switch>
         <Footer />
       </div>
