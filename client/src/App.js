@@ -6,7 +6,7 @@ import Main from './pages/main';
 import NewPost from './pages/newPost';
 import OnePost from './pages/onePost';
 import PostList from './pages/postList';
-import Login from './components/Login';
+import Mypost from './pages/mypost';
 import Footer from './components/Footer';
 // import { initialState } from './static/dummyData';
 
@@ -34,6 +34,7 @@ function App() {
           <Route path="/postList/:no/newPost" component={NewPost} />
           <Route path="/onePost/:no" component={OnePost} />
           <Route path="/postList/:no" component={PostList} />
+          <Route path="/mypost" component={Mypost} />
         </Switch>
         <Footer />
       </div>

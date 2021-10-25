@@ -7,6 +7,10 @@ import { Stylelink } from '../pages/main.style';
 import {
     MypageContainer,
     ListmenuBox,
+    ListTitle,
+    ListCreatedAt,
+    ListView,
+    ListLike,
     ListdivBox,
     WritiBox,
     PagenumBox,

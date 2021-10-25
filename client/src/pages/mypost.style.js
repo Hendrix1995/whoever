@@ -18,6 +18,41 @@ export const ListmenuBox = styled.div`
   margin-bottom: 4px;
   font-size: 25px;
 `;
+
+export const ListTitle = styled.div`
+  width: 50%;
+  font-family: 'MaplestoryOTFBold';
+`;
+
+export const ListCreatedAt = styled.div`
+  width: 30%;
+  margin-left: 40px;
+  font-family: 'MaplestoryOTFBold';
+
+  @media only screen and (max-width: 950px) {
+    text-align: right;
+  }
+`;
+
+export const ListView = styled.div`
+  width: 10%;
+  font-family: 'MaplestoryOTFBold';
+
+  @media only screen and (max-width: 950px) {
+    display: none;
+  }
+`;
+
+export const ListLike = styled.div`
+  width: 10%;
+  font-family: 'MaplestoryOTFBold';
+
+  text-align: right;
+  @media only screen and (max-width: 950px) {
+    display: none;
+  }
+`;
+
 export const ListdivBox = styled.div`
   width: 100%;
 `;

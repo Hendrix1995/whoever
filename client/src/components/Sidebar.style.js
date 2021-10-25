@@ -30,6 +30,7 @@ export const ModalSideBarBackdrop = styled.div`
   animation-delay: -0.3s;
   animation-timing-function: ease all;
 `;
+
 export const MenuContainer = styled.div`
   background-color: #ffffff;
   border: solid 8px #ffad4f;

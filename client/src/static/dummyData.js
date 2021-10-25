@@ -1204,5 +1204,157 @@ export const initialState = {
       createdAt: '2021-10-25T16:17:27.000Z',
       updatedAt: '2021-10-25T16:17:27.000Z'
     }
+  ],
+  mypost: [
+    {
+    id: 3,
+    userId: 1,
+    img: '',
+    categoryId: 1,
+    title: '코로나 언제 끝나니',
+    content: '가나다라마바사,abcdefg',
+    views: 1,
+    suggestions: 9,
+    createdAt: '2003-02-20T16:17:27.000Z',
+    updatedAt: '2003-02-20T16:17:27.000Z'
+  },
+  {
+    id: 7,
+    userId: 1,
+    img: '',
+    categoryId: 1,
+    title: '대한항공 마일리지 사용방법좀요',
+    content: '가나다라마바사,abcdefg',
+    views: 1,
+    suggestions: 5,
+    createdAt: '2007-02-12T16:17:27.000Z',
+    updatedAt: '2007-02-12T16:17:27.000Z'
+  },
+  {
+    id: 42,
+    userId: 1,
+    img: '',
+    categoryId: 1,
+    title: '내일로 여행이 짱이지',
+    content: '가나다라마바사,abcdefg',
+    views: 1,
+    suggestions: 5,
+    createdAt: '2012-02-12T16:17:27.000Z',
+    updatedAt: '2012-02-12T16:17:27.000Z'
+  },
+  {
+    id: 43,
+    userId: 1,
+    img: '',
+    categoryId: 1,
+    title: '프라하 동행 구해요',
+    content: '가나다라마바사,abcdefg',
+    views: 1,
+    suggestions: 9,
+    createdAt: '2013-02-20T16:17:27.000Z',
+    updatedAt: '2013-02-20T16:17:27.000Z'
+  },
+  {
+    id: 55,
+    userId: 1,
+    img: '../images/jyp.png',
+    categoryId: 3,
+    title: '밀키트 쇼핑몰 추천이요~',
+    content: '가나다라마바사,abcdefg',
+    views: 1,
+    suggestions: 1,
+    createdAt: '2012-07-30T16:17:27.000Z',
+    updatedAt: '2012-07-30T16:17:27.000Z'
+  },
+  {
+    id: 56,
+    userId: 1,
+    img: '../images/jyp.png',
+    categoryId: 3,
+    title: '나가서 사먹자!',
+    content: '가나다라마바사,abcdefg',
+    views: 1,
+    suggestions: 15,
+    createdAt: '2012-12-12T16:17:27.000Z',
+    updatedAt: '2012-12-12T16:17:27.000Z'
+  },
+  {
+    id: 85,
+    userId: 1,
+    img: '../images/jyp.png',
+    categoryId: 5,
+    title: '슬기로운 의사생활 ost 목록',
+    content: `3.1. Part.1 비와 당신
+    3.2. Part.2 가을 우체국 앞에서
+    3.3. Part.3 나는 너 좋아
+    3.4. Part.4 누구보다 널 사랑해
+    3.5. Part.5 좋아 좋아
+    3.6. Part.6 슈퍼스타
+    3.7. 첫번째 스페셜
+    3.8. Part.7 너에게
+    3.9. Part.8 여전히 아름다운지
+    3.10. Part.9 회상
+    3.11. Part.10 It's My Life
+    3.12. 두번째 스페셜
+    3.13. Part.11 하늘을 달리다
+    3.14. Part.12-1 Butterfly
+    3.15. Part.12-2 언젠가는`,
+    views: 1,
+    suggestions: 1,
+    createdAt: '2021-06-02T16:17:27.000Z',
+    updatedAt: '2021-06-02T16:17:27.000Z'
+  },
+  {
+    id: 86,
+    userId: 1,
+    img: '../images/jyp.png',
+    categoryId: 6,
+    title: '코드스테이츠 좋나요??',
+    content: `단기간에 고강도 수업을 듣는 것은 잘 따라간다면, 시간을 절약할 수 있다. 그러나, 고강도 수업이 장기간으로 진행될 경우, 사람들의 정신은 피폐해진다. 그리고 심하면 번아웃 증후군이 올 수있다.
+    실제로, 내가 페어 프로그래밍을 할 때, 멘탈이 나가서 우셨던 분도 계셨고, 장기간 혼자서 공부만 해야 되니 외로움을 이기지 못하고, Zoom으로 같이 있어달라고 부탁하시는 분도 있었다.
+    나 역시도 밖에 나갈 수 없어서, 잠깐이라도 창 밖을 보면서 쓸쓸한 마음을 달래야 했고, 너무 힘들어서 다 포기하고 싶을 때도 너무 많았다.
+    그러나, 코드스테이츠 측은 여기에 대해서 아무런 도움을 안 준다! 그냥 다음 진도를 뺄 뿐이다!!`,
+    views: 18,
+    suggestions: 15,
+    createdAt: '2001-08-12T16:17:27.000Z',
+    updatedAt: '2001-08-12T16:17:27.000Z'
+  },
+  {
+    id: 92,
+    userId: 1,
+    img: '',
+    categoryId: 6,
+    title: '중괄호 하나 때문에 한시간 동안 화면만 봤어요ㅎ',
+    content: '가나다라마바사,abcdefg',
+    views: 1,
+    suggestions: 5,
+    createdAt: '2016-10-12T16:17:27.000Z',
+    updatedAt: '2016-10-12T16:17:27.000Z'
+  },
+  {
+    id: 93,
+    userId: 1,
+    img: '',
+    categoryId: 6,
+    title: '목업 무료 사이트 아시는 분~',
+    content: '가나다라마바사,abcdefg',
+    views: 1,
+    suggestions: 9,
+    createdAt: '2018-02-12T16:17:27.000Z',
+    updatedAt: '2018-02-12T16:17:27.000Z'
+  },
+    {
+      id: 100,
+      userId: 1,
+      img: '../images/jyp.png',
+      categoryId: 6,
+      title: '우분투 하다가 속터집니다진짜!!',
+      content:
+        'LTS사용 안하는이상 6개월마다 업데이트 해줘야함, 유니티가 호불호가 갈림, LTS도 최신버전과 차별이 좀 있음(LTS는 지원기간이 5년)//16년도) 영어권은 잘되어있지만 한글은 오역이 있을 수 있음',
+      views: 1,
+      suggestions: 1,
+      createdAt: '2021-10-12T16:17:27.000Z',
+      updatedAt: '2021-10-12T16:17:27.000Z'
+    },
   ]
 };
