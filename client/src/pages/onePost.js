@@ -25,11 +25,12 @@ import {
 } from './onePost.style';
 import View from '../components/View';
 
-const OnePost = ({ match, posts }) => {
+const OnePost = ({ match, posts, setPosts }) => {
   const postId = Number(match.params.no);
 
   const post = posts.filter((el) => el.id === postId);
-  const getCategorTitle = (no) => {
+  console.log(posts.filter((el) => el.id === postId)[0])
+  const getCategoryTitle = (no) => {
     if (no === 1) return '여행';
     if (no === 2) return '술';
     if (no === 3) return '맛집';
@@ -42,7 +43,7 @@ const OnePost = ({ match, posts }) => {
     <Maindiv>
       <PostTitleBox>
         <Stylelink to={`/postList=${post[0].categoryId}`}>
-          <PostTitle>{getCategorTitle(post[0].categoryId)}</PostTitle>
+          <PostTitle>{getCategoryTitle(post[0].categoryId)}</PostTitle>
         </Stylelink>
       </PostTitleBox>
       <Title_Post>{post[0].title}</Title_Post>

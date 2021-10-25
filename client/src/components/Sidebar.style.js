@@ -26,7 +26,7 @@ export const ModalSideBarBackdrop = styled.div`
   place-items: left;
 
   animation-name: ${slideIn};
-  animation-duration: 1.0s;
+  animation-duration: 1s;
   animation-delay: -0.3s;
   animation-timing-function: ease all;
 `;

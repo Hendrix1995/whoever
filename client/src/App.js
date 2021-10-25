@@ -53,12 +53,12 @@ function App() {
           />
           <Route
             path="/onePost=:no"
-            render={(match) => <OnePost posts={posts} match={match.match} />}
+            render={(match) => <OnePost posts={posts} setPosts={setPosts} match={match.match} />}
           />
           <Route path="/mypost" 
           render={(match) => (
               <Mypost
-                myposts={myposts} match={match.match} />)}
+                posts={posts} match={match.match} />)}
                 />
         </Switch>
         <Footer />

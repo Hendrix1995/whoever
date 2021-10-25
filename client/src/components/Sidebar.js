@@ -11,6 +11,7 @@ import {
   UserInfoDownBtnContainer,
   UserPost,
   UserPostText,
+  LoginFirstText,
   LogIn,
   Logout,
   LogoutText,
@@ -33,11 +34,16 @@ const Sidebar = ({ isLogin, isOpen, sideBarOpenHandler, categories }) => {
                 <UserName>HyeonSi</UserName>
               </UserInfoUpContainer>
               <UserInfoDownBtnContainer>
-                <UserPost className="fas fa-user-edit">
-                  <Stylelink to={'/mypost'}>
+                {isLogin ? (
+                  <UserPost className="fas fa-user-edit">
+                    <Stylelink
+                      to={`/mypost`}>
                     <UserPostText>작성글</UserPostText>
-                  </Stylelink>
-                </UserPost>
+                    </Stylelink>
+                  </UserPost>
+                ) : (
+                  <div style={{ display: 'none' }} />
+                )}
                 {/* 당신... 작성한 글 페이지 만들어야돼.. */}
                 {isLogin ? (
                   <Logout className="fas fa-sign-out-alt">

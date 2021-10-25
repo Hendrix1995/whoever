@@ -15,14 +15,14 @@ import {
     PagenumBox,
   } from "./mypost.style";
 
-  const Mypost = ({ match, myposts }) => {
+  const Mypost = ({ match, posts }) => {
     const categoryId = Number(match.params.no);
-    console.log(categoryId)
     // categoryId에 맞는 post만 서버에서 받는다. useEffect,axios
-   
-    const categoryPost = myposts
-    .slice()
+  //  console.log(myposts)
+    const categoryPost = posts
+    .filter((post) => post.userId === 1)
     .reverse();
+    // console.log(categoryPost)
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(10);
     const categoryLength = categoryPost.length;
@@ -57,7 +57,8 @@ import {
             </ListmenuBox>
             <ListdivBox>
             {currentPosts(categoryPost).map((post) => (
-                <Lists
+            //  console.log(post)
+             <Lists
                 key={post.id}
                 post={post}
                 />  
