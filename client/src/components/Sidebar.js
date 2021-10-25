@@ -9,6 +9,7 @@ import {
   UserInfoDownBtnContainer,
   UserPost,
   UserPostText,
+  LoginFirstText,
   LogIn,
   Logout,
   LogoutText,
