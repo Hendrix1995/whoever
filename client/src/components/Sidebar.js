@@ -11,6 +11,7 @@ import {
   UserInfoDownBtnContainer,
   UserPost,
   UserPostText,
+  LoginFirstText,
   LogIn,
   Logout,
   LogoutText,
@@ -35,7 +36,10 @@ const Sidebar = ({ isLogin, isOpen, sideBarOpenHandler, categories }) => {
               <UserInfoDownBtnContainer>
                 {isLogin ? (
                   <UserPost className="fas fa-user-edit">
+                    <Stylelink
+                      to={`/mypost`}>
                     <UserPostText>작성글</UserPostText>
+                    </Stylelink>
                   </UserPost>
                 ) : (
                   <div style={{ display: 'none' }} />

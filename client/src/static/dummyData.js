@@ -570,7 +570,7 @@ export const initialState = {
     },
     {
       id: 48,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 3,
       title: '곱창 맛집좀요!',
@@ -582,7 +582,7 @@ export const initialState = {
     },
     {
       id: 49,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 3,
       title: '홍대 베이글 하우스 후기',
@@ -594,7 +594,7 @@ export const initialState = {
     },
     {
       id: 50,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 3,
       title: '밀키트 쇼핑몰 추천이요~',
@@ -609,7 +609,7 @@ export const initialState = {
     },
     {
       id: 51,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 4,
       title: '낚시하자~',
@@ -621,7 +621,7 @@ export const initialState = {
     },
     {
       id: 52,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 4,
       title: '금강 휴게소 낚시터',
@@ -633,7 +633,7 @@ export const initialState = {
     },
     {
       id: 53,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 4,
       title: '바다낚시가 짱이지',
@@ -645,7 +645,7 @@ export const initialState = {
     },
     {
       id: 54,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 4,
       title: '유해진 만재도 낚시ㅋㅋ',
@@ -657,7 +657,7 @@ export const initialState = {
     },
     {
       id: 55,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 4,
       title: '도시어부 촬영지 어딘가요?',
@@ -674,14 +674,14 @@ export const initialState = {
       categoryId: 4,
       title: '낚시하자~',
       content: '가나다라마바사,abcdefg',
-      views: 1,
+      views: 2,
       suggestions: 15,
       createdAt: '2005-02-20T16:17:27.000Z',
       updatedAt: '2005-02-20T16:17:27.000Z'
     },
     {
       id: 57,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 4,
       title: '낚시배 빌리자',
@@ -693,7 +693,7 @@ export const initialState = {
     },
     {
       id: 58,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 4,
       title: '같이 낚시하러 갈 사람 구해요',
@@ -705,7 +705,7 @@ export const initialState = {
     },
     {
       id: 59,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 4,
       title: '문어낚시 가능한 곳 있나요?',
@@ -717,7 +717,7 @@ export const initialState = {
     },
     {
       id: 60,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 4,
       title: '광어 잡으러 가자',
@@ -729,7 +729,7 @@ export const initialState = {
     },
     {
       id: 61,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 4,
       title: '낚시하자~',
@@ -741,7 +741,7 @@ export const initialState = {
     },
     {
       id: 62,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 4,
       title: '금강 휴게소 낚시터',
@@ -753,7 +753,7 @@ export const initialState = {
     },
     {
       id: 63,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 4,
       title: '바다낚시가 짱이지',
@@ -765,7 +765,7 @@ export const initialState = {
     },
     {
       id: 64,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 4,
       title: '유해진 만재도 낚시ㅋㅋ',
@@ -777,7 +777,7 @@ export const initialState = {
     },
     {
       id: 65,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 4,
       title: '도시어부 촬영지 어딘가요?',
@@ -789,7 +789,7 @@ export const initialState = {
     },
     {
       id: 66,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 4,
       title: '낚시하자~',
@@ -802,7 +802,7 @@ export const initialState = {
     },
     {
       id: 67,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 5,
       title: '현재 멜론 순위 실시간',
@@ -814,7 +814,7 @@ export const initialState = {
     },
     {
       id: 68,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 5,
       title: '아이유 신곡 Strawberry Moon 짱 좋음!',
@@ -826,7 +826,7 @@ export const initialState = {
     },
     {
       id: 69,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 5,
       title: '재즈페스티벌 언제쯤 하나요?',
@@ -838,7 +838,7 @@ export const initialState = {
     },
     {
       id: 70,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 5,
       title: '한강에서 들을만한 플레이리스트',
@@ -850,7 +850,7 @@ export const initialState = {
     },
     {
       id: 71,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 5,
       title: '겁나 힙한 팝송좀요~',
@@ -862,7 +862,7 @@ export const initialState = {
     },
     {
       id: 72,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 5,
       title: '갤럭시 광고 음악 뭔지 아는 사람!',
@@ -874,7 +874,7 @@ export const initialState = {
     },
     {
       id: 73,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 5,
       title: '그 노래 뭐죠?? 나나나~',
@@ -886,7 +886,7 @@ export const initialState = {
     },
     {
       id: 74,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 5,
       title: '노래 듣기 좋은 블투 스피커 추천좀요~',
@@ -898,7 +898,7 @@ export const initialState = {
     },
     {
       id: 75,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 5,
       title: '방탄콘서트 티켓 구하기 힘드나요?',
@@ -910,7 +910,7 @@ export const initialState = {
     },
     {
       id: 76,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 5,
       title: '십센치 나만 좋아해요??',
@@ -922,7 +922,7 @@ export const initialState = {
     },
     {
       id: 77,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 5,
       title: '악뮤 콘서트 후기 풀어드림',
@@ -934,7 +934,7 @@ export const initialState = {
     },
     {
       id: 78,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 5,
       title: '크리스마스 캐롤 플레이리스트 공유',
@@ -946,7 +946,7 @@ export const initialState = {
     },
     {
       id: 79,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 5,
       title: '우울할 때 더 우울해지는 음악',
@@ -958,7 +958,7 @@ export const initialState = {
     },
     {
       id: 80,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 5,
       title: '슬기로운 의사생활 ost 목록',
@@ -984,7 +984,7 @@ export const initialState = {
     },
     {
       id: 81,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 6,
       title: '코드스테이츠 좋나요??',
@@ -999,7 +999,7 @@ export const initialState = {
     },
     {
       id: 82,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 6,
       title: 'codegangster 스터디 들어올 사람 구해요~',
@@ -1011,7 +1011,7 @@ export const initialState = {
     },
     {
       id: 83,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 6,
       title: 'CSS 뿌시는 법 아는 분....',
@@ -1023,7 +1023,7 @@ export const initialState = {
     },
     {
       id: 84,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 6,
       title: '백엔드 sequelize 겁나 짜증납니다..',
@@ -1035,7 +1035,7 @@ export const initialState = {
     },
     {
       id: 85,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 6,
       title: 'dummy데이터 적용시키는 방법',
@@ -1047,7 +1047,7 @@ export const initialState = {
     },
     {
       id: 86,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 6,
       title: 'const app = express()',
@@ -1059,7 +1059,7 @@ export const initialState = {
     },
     {
       id: 87,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 6,
       title: '중괄호 하나 때문에 한시간 동안 화면만 봤어요ㅎ',
@@ -1071,7 +1071,7 @@ export const initialState = {
     },
     {
       id: 88,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 6,
       title: '목업 무료 사이트 아시는 분~',
@@ -1083,7 +1083,7 @@ export const initialState = {
     },
     {
       id: 89,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 6,
       title: '함수형이랑 클래스형 중 뭐가 더 나아요?',
@@ -1095,7 +1095,7 @@ export const initialState = {
     },
     {
       id: 90,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 6,
       title: '최근 개발자 연봉 근황',
@@ -1107,7 +1107,7 @@ export const initialState = {
     },
     {
       id: 91,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 6,
       title: '쿠팡 개발자 채용 공고',
@@ -1119,7 +1119,7 @@ export const initialState = {
     },
     {
       id: 92,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 6,
       title: '개발자 면접볼 때 필수 지식 있나요?',
@@ -1131,7 +1131,7 @@ export const initialState = {
     },
     {
       id: 93,
-      userId: 1,
+      userId: 2,
       img: '',
       categoryId: 6,
       title: '알고리즘 어떻게 뿌심?? 노답쓰..',
@@ -1143,7 +1143,7 @@ export const initialState = {
     },
     {
       id: 94,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 6,
       title: '코딩으로 팩맨 게임 만드는 법 아시는 분 있나요?',
@@ -1155,7 +1155,7 @@ export const initialState = {
     },
     {
       id: 95,
-      userId: 1,
+      userId: 2,
       img: '../images/jyp.png',
       categoryId: 6,
       title: '우분투 하다가 속터집니다진짜!!',
@@ -1204,5 +1204,5 @@ export const initialState = {
       createdAt: '2021-10-25T16:17:27.000Z',
       updatedAt: '2021-10-25T16:17:27.000Z'
     }
-  ]
+  ],
 };
