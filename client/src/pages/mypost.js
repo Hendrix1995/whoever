@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { initialState } from '../static/dummyData';
 import Lists from '../components/Lists';
 import PostTitle from '../components/PostTitle';
 import Pagination from '../components/Pagination';
@@ -16,11 +15,12 @@ import {
     PagenumBox,
   } from "./mypost.style";
 
-  const Mypost = ({match}) => {
+  const Mypost = ({ match, myposts }) => {
     const categoryId = Number(match.params.no);
-    const [myposts, setmyPosts] = useState(initialState.mypost); //dummyData = axios
     // categoryId에 맞는 post만 서버에서 받는다. useEffect,axios
+    console.log(myposts)
     const categoryPost = myposts.reverse();
+    console.log(categoryPost)
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(10);
     const categoryLength = categoryPost.length;

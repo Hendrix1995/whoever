@@ -20,10 +20,7 @@ import {
   BoardTitle
 } from './Sidebar.style';
 
-const Sidebar = ({ isLogin, isOpen, sideBarOpenHandler }) => {
-  const [posts, setPosts] = useState(initialState.posts); //dummyData = axios
-  const [categories, setCategories] = useState(initialState.categories);
-
+const Sidebar = ({ isLogin, isOpen, sideBarOpenHandler, categories }) => {
   return (
     <SidebarContainer>
       {isOpen ? (
@@ -36,7 +33,9 @@ const Sidebar = ({ isLogin, isOpen, sideBarOpenHandler }) => {
               </UserInfoUpContainer>
               <UserInfoDownBtnContainer>
                 <UserPost className="fas fa-user-edit">
-                  <UserPostText>작성글</UserPostText>
+                  <Stylelink to={'/mypost'}>
+                    <UserPostText>작성글</UserPostText>
+                  </Stylelink>
                 </UserPost>
                 {/* 당신... 작성한 글 페이지 만들어야돼.. */}
                 {isLogin ? (
@@ -57,7 +56,7 @@ const Sidebar = ({ isLogin, isOpen, sideBarOpenHandler }) => {
                 <Listdiv key={category.id}>
                   <BoardtitleBox>
                     <Stylelink
-                      to={`/postList/${category.id}`}
+                      to={`/postList=${category.id}`}
                       onClick={sideBarOpenHandler}
                     >
                       <BoardTitle>{category.content}</BoardTitle>
