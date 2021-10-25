@@ -29,7 +29,6 @@ const OnePost = ({ match, posts, setPosts }) => {
   const postId = Number(match.params.no);
 
   const post = posts.filter((el) => el.id === postId);
-  console.log(posts.filter((el) => el.id === postId)[0])
   const getCategoryTitle = (no) => {
     if (no === 1) return '여행';
     if (no === 2) return '술';

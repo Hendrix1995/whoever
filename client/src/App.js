@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 import { initialState } from './static/dummyData';
 
 function App() {
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
   // const [userInfo, setUserInfo] = useState({});
   const [posts, setPosts] = useState(initialState.posts);
   const [myposts, setMyposts] = useState(initialState.mypost);
