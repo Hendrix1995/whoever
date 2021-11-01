@@ -18,6 +18,10 @@ const upload = multer({ storage: storage });
 const app = express();
 const PORT = 80;
 
+//추가한 코드
+const { sequelize } = require('./models');
+sequelize.sync();
+
 app.use(
   cors({
     origin: true,

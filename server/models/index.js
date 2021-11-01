@@ -5,7 +5,7 @@ const path = require('path');
 const Sequelize = require('sequelize');
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'production';
-const config = require(__dirname + '/../config')[env];
+const config = require(__dirname + '/../config/config.js')[env];
 const db = {};
 
 // if (config.use_env_variable) {
@@ -15,7 +15,11 @@ let sequelize = new Sequelize(
   config.database,
   config.username,
   config.password,
-  config
+  {
+    dialect: 'mysql',
+    host: config.host,
+    port: 13306
+  }
 );
 //   );
 // }
