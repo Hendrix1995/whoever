@@ -72,16 +72,11 @@ const Header = ({
   };
 
   const logoutHandler = () => {
-    axios
-      .get(`${process.env.REACT_APP_API_URL}/logout`, {
-        withCredentials: true
-      })
-      .then((res) => {
-        setUserInfo({});
-        setIsLogin(false);
-        alert('로그아웃 완료');
-        history.push({ pathname: '/' });
-      });
+    localStorage.removeItem('accessToken');
+    setUserInfo({});
+    setIsLogin(false);
+    alert('로그아웃 완료');
+    history.push({ pathname: '/' });
   };
 
   return (

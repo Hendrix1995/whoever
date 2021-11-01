@@ -20,7 +20,9 @@ function App() {
   const issueTokens = (token) => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/tokenRequest`, {
-        headers: { authorization: `Bearer ${token}` },
+        headers: {
+          authorization: `Bearer ${localStorage.getItem('accessToken')}`
+        },
         withCredentials: true
       })
       .then((res) => {

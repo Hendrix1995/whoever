@@ -34,7 +34,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //token
-app.get('/tokenrequest', controllers.tokenRequest);
+app.get('/tokenRequest', controllers.tokenRequest);
 
 // users 요청
 app.post('/login', controllers.login.post);
