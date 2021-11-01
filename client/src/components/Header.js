@@ -55,7 +55,6 @@ const Header = ({
   };
 
   const loginBtnHandler = () => {
-    // axios로 사용 요청을 보낼때  db에 있는 정보에 맞춰서 버튼 실행하는 이벤트 핸들러
     axios
       .post(
         `${process.env.REACT_APP_API_URL}/login`,
@@ -64,6 +63,7 @@ const Header = ({
       )
       .then((res) => {
         loginHandler(res.data);
+        localStorage.setItem('accessToken', res.data.data);
         openModalHandler();
       })
       .catch((err) => {
