@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 const app = express();
-const PORT = 4000;
+const PORT = 80;
 
 app.use(
   cors({
@@ -45,7 +45,7 @@ app.post('/onepost', controllers.getOnePost.post);
 app.post('/searchpage', controllers.postSearchPosts.post);
 app.post('/searchmypost', controllers.postSearchMyPosts.post);
 app.put('/changepost', controllers.changepost.update);
-app.post('/deletepost', controllers.deletepost.post);
+app.delete('/deletepost', controllers.deletepost.delete);
 app.post('/uploadpost', controllers.uploadpost.post);
 app.put('/suggestionsup', controllers.suggestionUp.update);
 app.put('/suggestionsdown', controllers.suggestionDown.update);

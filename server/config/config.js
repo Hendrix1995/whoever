@@ -3,11 +3,11 @@ dotenv.config();
 
 const config = {
   production: {
-    host: 'localhost',
-    username: 'admin',
-    password: process.env.DATABASE_PASSWORD,
+    username: process.env.RDS_USERNAME,
+    password: process.env.RDS_PASSWORD,
+    host: process.env.RDS_HOSTNAME,
+    port: process.env.RDS_PORT,
     database: 'whoever',
-    port: 80,
     dialect: 'mysql'
   }
 };

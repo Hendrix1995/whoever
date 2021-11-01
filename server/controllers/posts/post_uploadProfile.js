@@ -17,7 +17,7 @@ module.exports = {
         };
       }
     };
-    const image = req.file.path;
+    const image = `${process.env.REACT_APP_API_URL}/${req.file.path}`;
     if (image === undefined) {
       return res.status(400).send(util.fail(400, '이미지가 없습니다'));
     }
