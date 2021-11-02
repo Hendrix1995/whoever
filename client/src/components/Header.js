@@ -37,6 +37,7 @@ const Header = ({
   const [userId, setUserId] = useState('');
   const [password, setPassword] = useState('');
   const history = useHistory();
+
   const handleChange = (e) => {
     if (e.target.type === 'password') {
       setPassword(e.target.value);
@@ -55,6 +56,7 @@ const Header = ({
   };
 
   const loginBtnHandler = () => {
+    // axios로 사용 요청을 보낼때  db에 있는 정보에 맞춰서 버튼 실행하는 이벤트 핸들러
     axios
       .post(
         `${process.env.REACT_APP_API_URL}/login`,
@@ -62,8 +64,9 @@ const Header = ({
         { withCredentials: true }
       )
       .then((res) => {
-        loginHandler(res.data);
-        localStorage.setItem('accessToken', res.data.data);
+        // 로그인핸들러함수보다 로컬스토리지에 값 추가 우선!
+        localStorage.setItem('aToken', res.data.data);
+        loginHandler();
         openModalHandler();
       })
       .catch((err) => {
@@ -72,7 +75,7 @@ const Header = ({
   };
 
   const logoutHandler = () => {
-    localStorage.removeItem('accessToken');
+    localStorage.removeItem('aToken');
     setUserInfo({});
     setIsLogin(false);
     alert('로그아웃 완료');

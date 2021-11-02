@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
 import {
   Listdiv,
   Maindiv,
@@ -12,16 +10,7 @@ import {
   Stylelink
 } from '../pages/main.style';
 
-const Main = ({ categories, setCategories }) => {
-  const [posts, setPosts] = useState([]);
-  useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_API_URL}/main`, { withCredentials: true })
-      .then((res) => {
-        setCategories(res.data.categoryList);
-        setPosts(res.data.result);
-      });
-  }, []);
+const Main = ({ categories, posts }) => {
   return (
     <Maindiv>
       {categories.map((category) => (

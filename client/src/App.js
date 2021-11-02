@@ -14,15 +14,14 @@ import Footer from './components/Footer';
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
-  const [userInfo, setUserInfo] = useState({});
+  const [userInfo, setUserInfo] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [posts, setPosts] = useState([]);
 
-  const issueTokens = (token) => {
+  const issueTokens = () => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/tokenRequest`, {
-        headers: {
-          authorization: `Bearer ${localStorage.getItem('accessToken')}`
-        },
+        headers: { authorization: `Bearer ${localStorage.getItem('aToken')}` },
         withCredentials: true
       })
       .then((res) => {
@@ -31,15 +30,19 @@ function App() {
       })
       .catch((err) => console.log(err));
   };
-
   useEffect(() => {
-    issueTokens();
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/main`, { withCredentials: true })
+      .then((res) => {
+        setCategories(res.data.categoryList);
+        setPosts(res.data.result);
+        issueTokens();
+      });
   }, []);
 
-  const loginHandler = (token) => {
-    issueTokens(token.data);
+  const loginHandler = () => {
+    issueTokens();
   };
-
   return (
     <BrowserRouter>
       <div className="App">
@@ -55,24 +58,14 @@ function App() {
           <Route
             exact
             path="/"
-            render={() => (
-              <Main categories={categories} setCategories={setCategories} />
-            )}
+            render={() => <Main posts={posts} categories={categories} />}
           />
           <Route
             path="/postList=:no"
-            render={(match) => <PostList match={match.match} />}
+            render={(match) => (
+              <PostList match={match.match} isLogin={isLogin} />
+            )}
           />
-          {isLogin ? (
-            <Route
-              path="/newPost/postList=:no"
-              render={(match) => (
-                <NewPost match={match.match} userInfo={userInfo} />
-              )}
-            />
-          ) : (
-            <Redirect to={'/'} />
-          )}
 
           <Route
             path="/onePost=:no"
@@ -80,14 +73,6 @@ function App() {
               <OnePost match={match.match} userInfo={userInfo} />
             )}
           />
-          {isLogin ? (
-            <Route
-              path="/mypost"
-              render={(match) => <Mypost userInfo={userInfo} />}
-            />
-          ) : (
-            <Redirect to={'/'} />
-          )}
 
           <Route
             path="/searchpost=:no"
@@ -100,10 +85,29 @@ function App() {
               <SearchMypost userInfo={userInfo} match={match.match} />
             )}
           />
+          {isLogin ? (
+            <Route
+              path="/mypost"
+              render={(match) => <Mypost userInfo={userInfo} />}
+            />
+          ) : (
+            <Redirect to={'/'} />
+          )}
+          {isLogin ? (
+            <Route
+              path="/newPost/postList=:no"
+              render={(match) => (
+                <NewPost match={match.match} userInfo={userInfo} />
+              )}
+            />
+          ) : (
+            <Redirect to={'/'} />
+          )}
         </Switch>
         <Footer />
       </div>
     </BrowserRouter>
   );
 }
+
 export default App;
