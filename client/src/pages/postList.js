@@ -16,7 +16,7 @@ import {
   WritiBox,
   WritiBtn
 } from '../pages/postList.style';
-const PostList = ({ match }) => {
+const PostList = ({ match, isLogin }) => {
   const categoryId = Number(match.params.no);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(10);
@@ -41,7 +41,7 @@ const PostList = ({ match }) => {
     if (no === 2) return '술';
     if (no === 3) return '맛집';
     if (no === 4) return '낚시';
-    if (no === 5) return '노래';
+    if (no === 5) return '노래';
     if (no === 6) return '코딩';
   };
   return (
@@ -68,7 +68,11 @@ const PostList = ({ match }) => {
       </ListdivBox>
       <WritiBox>
         <Stylelink to={`/newPost/postList=${categoryId}`}>
-          <WritiBtn>글쓰기</WritiBtn>
+          {isLogin ? (
+            <WritiBtn disabled={false}>글쓰기</WritiBtn>
+          ) : (
+            <WritiBtn disabled={true}>글쓰기</WritiBtn>
+          )}
         </Stylelink>
       </WritiBox>
       <PagenumBox>

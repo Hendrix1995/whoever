@@ -24,7 +24,6 @@ const NewPost = ({ match, userInfo }) => {
       return;
     }
     const editorInstance = editorRef.current.getInstance();
-    // const getContent = editorInstance.getMarkdown();
     const gethtml = editorInstance.getHTML();
     if (!gethtml) {
       alert('게시물을 작성해주세요');
